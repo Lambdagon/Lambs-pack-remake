@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/AceHearts"
+	"$basealphaenvmapmask" 1
+	"$model" "1"
+	"$additive" 1
+}

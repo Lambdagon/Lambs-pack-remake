@@ -6377,7 +6377,6 @@
 			"mouse_pressed_sound"	"ui/item_bottle_pickup.wav"
 			"drop_sound"		"ui/item_bottle_drop.wav"
 		}
-
 		"halloween2013_spellbook"
 		{
 			"item_class"	"tf_weapon_spellbook"
@@ -14118,9 +14117,10 @@
 				"nameable"		"1"
 			}
 			"loadondemand" "1"
-			"show_in_armory"	"0"
-			"item_type_name""#TF_Wearable_Hat"
-			"item_name"	"#TF_Domination_Hat_Ghostly"
+			"baseitem"	"1"
+			"show_in_armory"	"1"
+			"item_type_name"""
+			"item_name"	"No Hat"
 			"item_description"	"#TF_Domination_Hat_Ghostly_Desc"
 			"item_slot"	"head"
 			"equip_region"	"hat"
@@ -14132,7 +14132,7 @@
 			"image_inventory_size_h"		"82"
 			"model_player_per_class"
 			{
-				"basename"	"models/player/items/all_class/ghostly_gibus_%s.mdl"
+				"basename"	"models/empty.mdl"
 			}
 			"drop_type"	"drop"
 			"used_by_classes"
@@ -14157,11 +14157,6 @@
 			}
 			"visuals"
 			{
-				"player_bodygroups"
-				{
-					"hat"			"1"
-					"headphones"	"1"
-				}
 			}
 			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
 			"drop_sound" 			"ui/item_hat_drop.wav"
@@ -19056,6 +19051,106 @@
 				}
 			}
 		}
+			"6900"
+		{
+			"name"	"Blighted Beak"
+			"prefab"		"base_misc"
+			"first_sale_date"	"2010/12/20"
+			"loadondemand"	"1"
+			"item_description" ""
+			"item_class"	"tf_wearable"
+			"craft_class"	"hat"
+			"craft_material_type"	"hat"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_if_purchased"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name" "#TF_Wearable_Mask"
+			"item_name"	"#TF_BlightedBeak"
+			"item_slot"	"head"
+			"equip_region"	"face"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/player/items/medic/blighted_beak"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/player/items/medic/medic_blighted_beak.mdl"
+			"drop_type"	"none"
+			"used_by_classes"
+			{
+				"medic"	"1"
+			}
+			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
+			"drop_sound" 		"ui/item_hat_drop.wav"
+						"attributes"
+			{
+				"has team color paintkit"
+				{
+					"attribute_class"	"has_team_color_paintkit"
+					"value"				"1"
+				}
+			}
+			"visuals"
+			{
+				"styles"
+				{
+					"0"
+					{
+						"skin"	"0"
+						"name"	"#TF_BlightedBeak_Style1"
+					}
+					"1"
+					{
+						"skin"	"1"
+						"name"	"#TF_BlightedBeak_Style2"
+					}
+				}
+			}
+		}
+		
+						"6906"
+		{
+			"name"	"Default Pyro Player Model"
+			"first_sale_date"	"2010/12/20"
+			"item_class"	"tf_wearable"
+			"baseitem"	"1"
+			"enabled"	"1"
+			"show_in_armory"	"1"
+			"item_slot"	"misc2"
+			"extra_wearable" "models/player/pyro.mdl"
+			"item_name"	"Default Pyro Player Model"
+			"image_inventory"	"backpack/player/items/all_class/pyrovision_goggles_heavy"
+			"model_player"	"models/player/pyro.mdl"
+			"used_by_classes"
+			{
+				"pyro"	"1"
+			}
+		}
+					"6907"
+		{
+			"name"	"Cremator Player Model"
+			"first_sale_date"	"2010/12/20"
+			"item_class"	"tf_wearable"
+			"static_attrs"
+			{
+				"mult_player_movespeed"				"0.7"
+			}
+			"baseitem"	"0"
+			"enabled"	"1"
+			"show_in_armory"	"1"
+			"prefab"	"hat_decoration"
+			"item_slot"	"misc2"
+			"item_name"	"Cremator Mask"
+			"item_description"	"Straight outta Beta!"
+			"image_inventory"	"backpack/player/items/all_class/pyrovision_goggles_heavy"
+			"extra_wearable" "models/crematorpm/pyro.mdl"
+			"model_player"	"models/crematorpm/pyro.mdl"
+			"used_by_classes"
+			{
+				"pyro"	"1"
+			}
+		}
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
@@ -19831,6 +19926,7 @@
 				}
 			}
 		}
+
 		"30842"
 		{
 			"name"		"Taunt: The Dueling Banjo"
@@ -20375,6 +20471,73 @@
 				"custom_taunt_prop_per_class"
 				{
 					"spy"		"models/workshop/player/items/spy/taunt_luxury_lounge/taunt_luxury_lounge.mdl"
+				}
+			}
+		}
+							"200000"
+		{
+			"name"	"The Shred Alert"
+			"prefab"	"taunt"
+			"first_sale_date"	"2013/02/13"
+			"item_name"		"#TF_ShredAlert"
+			"item_description"	"#TF_ShredAlert_Desc"
+			"propername"	"1"
+			"image_inventory"	"backpack/workshop_partner/player/items/taunts/brutal_guitar/brutal_guitar"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"item_quality"		"unique"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"	"1"
+				"soldier"	"1"
+				"demoman"	"1"
+				"medic"		"1"
+				"heavy"		"1"
+				"spy" 		"1"
+				"engineer" 	"1"
+				"pyro" 		"1"
+			}
+			"attributes"
+			{
+				"taunt attack name"
+				{
+					"attribute_class"	"taunt_attack_name"
+					"value"				"TAUNTATK_HEAVY_RADIAL_BUFF"
+				}
+				"taunt attack time"
+				{
+					"attribute_class"	"taunt_attack_time"
+					"value"				"0"
+				}
+			}
+			"taunt"
+			{
+				"custom_taunt_scene_per_class"
+				{
+					"scout"		"scenes\player\scout\low\taunt_brutalLegend.vcd"
+					"sniper"	"scenes\player\sniper\low\taunt_brutalLegend.vcd"
+					"soldier"	"scenes\player\soldier\low\taunt_brutalLegend.vcd"
+					"demoman"	"scenes\player\demoman\low\taunt_brutalLegend.vcd"
+					"medic"		"scenes\player\medic\low\taunt_brutalLegend.vcd"
+					"heavy"		"scenes\player\heavy\low\taunt_brutalLegend.vcd"
+					"spy"		"scenes\player\spy\low\taunt_brutalLegend.vcd"
+					"engineer"	"scenes\player\engineer\low\taunt_brutalLegend.vcd"
+					"pyro"		"scenes\player\pyro\low\taunt_brutalLegend.vcd"
+				}
+				"custom_taunt_prop_per_class"
+				{
+					"scout"		"models/workshop_partner/player/items/taunts/brutal_guitar_alt/brutal_guitar.mdl"
+					"sniper"	"models/workshop_partner/player/items/taunts/brutal_guitar_alt/brutal_guitar.mdl"
+					"soldier"	"models/workshop_partner/player/items/taunts/brutal_guitar_alt/brutal_guitar.mdl"
+					"demoman"	"models/workshop_partner/player/items/taunts/brutal_guitar_alt/brutal_guitar.mdl"
+					"medic"		"models/workshop_partner/player/items/taunts/brutal_guitar_alt/brutal_guitar.mdl"
+					"heavy"		"models/workshop_partner/player/items/taunts/brutal_guitar_alt/brutal_guitar.mdl"
+					"spy"		"models/workshop_partner/player/items/taunts/brutal_guitar_alt/brutal_guitar.mdl"
+					"engineer"	"models/workshop_partner/player/items/taunts/brutal_guitar_alt/brutal_guitar.mdl"
+					"pyro"		"models/workshop_partner/player/items/taunts/brutal_guitar_alt/brutal_guitar.mdl"
 				}
 			}
 		}
