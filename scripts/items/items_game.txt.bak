@@ -19209,17 +19209,27 @@
 				"fire rate bonus HIDDEN"
 				{
 					"attribute_class"	"mult_postfiredelay"
-					"value" "0.66"
+					"value" "0.35"
 				}
 				"mod max primary clip override"
 				{
 					"attribute_class"	"mod_max_primary_clip_override"
 					"value"	"-1"
 				}
-				"spread penalty HIDDEN"
+				"spread penalty"
 				{
 					"attribute_class" 	"mult_spread_scale"
-					"value" "45"
+					"value" "30"
+				}
+				"maxammo secondary increased"
+				{
+					"attribute_class"	"mult_maxammo_secondary"
+					"value"				"2"
+				}
+				"damage bonus HIDDEN"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"0.4"
 				}
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
