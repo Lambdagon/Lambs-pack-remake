@@ -1,0 +1,12 @@
+
+"lambda.gravitycoil_deploy"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_90dB"
+
+	"wave"		"lwp/gravitycoil_deploy.wav"
+}
+
