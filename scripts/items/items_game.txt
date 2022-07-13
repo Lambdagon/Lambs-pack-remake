@@ -19299,6 +19299,251 @@
 			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
 			"drop_sound"		"ui/item_metal_weapon_drop.wav"
 		}
+		"6910"
+		{
+            "name"    "super_shotgun"
+            "enabled"	"1"
+			"item_class"	"tf_weapon_scattergun"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_collect" "1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"item_type_name"	"#TF_Weapon_Shotgun"
+			"item_quality"	"strange"
+			"item_slot"		"primary"
+			"item_name"	"Close Encounter"
+			"item_description"	"Doom"
+			"baseitem" "0"
+			"show_in_armory"	"1"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"attach_to_hands"	"2"
+			"inspect_panel_dist" "40"
+			"image_inventory"	"backpack/weapons/w_models/w_shotgun"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"    "models/weapons/v_supershotgun_mercenary.mdl"
+			"model_world"    "models/weapons/v_supershotgun_mercenary.mdl"
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"particle_suffix"		"shotgun"
+			"visuals"
+			{
+				"sound_single_shot"	"HL2_Weapon_Shotgun.Double"
+				"sound_single_shot"	"HL2_Weapon_Shotgun.Double"
+				"sound_reload"	"HL2_Weapon_Shotgun.Reload"
+			}
+            "used_by_classes"
+            {
+                "engineer"    "1"
+				"sniper"	  "secondary"
+				"scout"		  "1"
+				"heavy"		  "secondary"
+				"soldier"	  "secondary"
+            }
+			"attributes"
+			{
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value" "0.34"
+				}
+				"scattergun no reload single"
+				{
+					"attribute_class"	"set_scattergun_no_reload_single"
+					"value"	"1"
+				}
+				"Projectile range decreased"
+				{
+					"attribute_class"	"mult_projectile_range"
+					"value"	"0.15"
+				}
+				"bullets per shot bonus"
+				{
+					"attribute_class" 	"mult_bullets_per_shot"
+					"value" "2.2"
+				}
+				"mod ammo per shot"
+				{
+					"attribute_class"	"mod_ammo_per_shot"
+					"value"	"2"
+				}
+			}
+		}
+		"6911"
+		{
+			"name"						"Medic Shotgun"
+			"item_class"				"tf_weapon_shotgun"
+			"show_in_armory"			"1"
+			
+	//		"baseitem"					"1"
+			
+			"item_slot"					"primary"
+			"item_quality"				"normal"
+			"item_name"					"#TF_Weapon_Shotgun"
+			"item_type_name"			"#TF_Weapon_Shotgun"
+			"propername"				"0"
+			
+			"min_ilevel"				"5"
+			"max_ilevel"				"5"
+			
+			"image_inventory"			"backpack/weapons/w_models/w_shotgun"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_world"				"models/weapons/w_models/w_shotgun_medic.mdl"
+			"model_player"				"models/weapons/v_models/v_shotgun_medic.mdl"
+			"attach_to_hands"			"2"
+			
+			"used_by_classes"
+			{
+				"medic"					"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"5 -2 -10"
+			}
+
+			"mouse_pressed_sound"		"#ui/item_metal_weapon_pickup.wav"
+			"drop_sound"				"#ui/item_metal_weapon_drop.wav"
+		}
+		"6912"
+		{
+			"name"						"Overhealer"
+			"item_class"				"tf_weapon_medigun"
+			"show_in_armory"			"1"
+			
+	//		"baseitem"					"1"
+			
+			"item_slot"					"secondary"
+			"item_quality"				"normal"
+			"item_name"					"Overhealer"
+			"item_type_name"			"#TF_Weapon_Medigun"
+			"propername"				"1"
+			
+			"min_ilevel"				"5"
+			"max_ilevel"				"5"
+			
+			"image_inventory"			"backpack/weapons/w_models/w_medigun"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_world"				"models/weapons/w_models/w_overhealer.mdl"
+			"model_player"				"models/weapons/v_models/v_overhealer_medic.mdl"
+			"attach_to_hands"			"2"
+			
+			"used_by_classes"
+			{
+				"medic"					"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -9"
+			}
+			"attributes"
+			{
+				"heal rate bonus"
+				{
+					"attribute_class"	"mult_medigun_healrate"
+					"value"	"3.25"
+				}
+				"ubercharge rate penalty"
+				{
+					"attribute_class"	"mult_medigun_uberchargerate"
+					"value"	"0.0"
+				}
+			}
+
+			"mouse_pressed_sound"		"#ui/item_metal_weapon_pickup.wav"
+			"drop_sound"				"#ui/item_metal_weapon_drop.wav"
+		}
+		"6914"
+		{
+			"name"						"Lead Pipe"
+			"item_class"				"tf_weapon_fists"
+			"show_in_armory"			"1"
+			
+	//		"baseitem"					"1"
+			
+			"item_slot"					"melee"
+			"item_quality"				"normal"
+			"item_name"					"Lead Pipe"
+			"item_type_name"			"Lead Pipe"
+			"propername"				"1"
+			
+			"min_ilevel"				"5"
+			"max_ilevel"				"5"
+			
+			"image_inventory"			"backpack/weapons/w_models/w_leadpipe"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"				"models/weapons/v_models/v_leadpipe_heavy.mdl"
+			"model_world"				"models/weapons/w_models/w_leadpipe.mdl"
+			"attach_to_hands"			"2"
+			
+			"used_by_classes"
+			{
+				"heavy"					"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -7"
+			}
+			"visuals"
+			{
+				"sound_melee_miss"		"Weapon_Crowbar.Miss"
+				"sound_melee_hit"		"Weapon_Bottle.HitFlesh"
+				"sound_melee_hit_world"	"Weapon_Crowbar.HitWorld"
+				"sound_burst"			"Weapon_Crowbar.MissCrit"
+			}	
+
+			"mouse_pressed_sound"		"#ui/item_metal_weapon_pickup.wav"
+			"drop_sound"				"#ui/item_metal_weapon_drop.wav"
+		}
+		"6915"
+		{
+			"name"						"Scout SMG"
+			"item_class"				"tf_weapon_smg"
+			"show_in_armory"			"1"
+			
+	//		"baseitem"					"1"
+			
+			"item_slot"					"secondary"
+			"item_quality"				"normal"
+			"item_name"					"#TF_Weapon_SMG"
+			"item_type_name"			"#TF_Weapon_SMG"
+			"propername"				"0"
+			
+			"min_ilevel"				"5"
+			"max_ilevel"				"5"
+			
+			"image_inventory"			"backpack/weapons/w_models/w_smg"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_world"				"models/weapons/w_models/w_smg.mdl"
+			"model_player"				"models/weapons/v_models/v_smg_sniper.mdl"
+			"attach_to_hands"			"2"
+			
+			"used_by_classes"
+			{
+				"scout"					"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -7"
+			}
+
+			"mouse_pressed_sound"		"#ui/item_metal_weapon_pickup.wav"
+			"drop_sound"				"#ui/item_metal_weapon_drop.wav"
+		}
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
